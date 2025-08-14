@@ -1,0 +1,73 @@
+.current-user-rank {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-light);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.rank-username.current-user {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.rank-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-light);
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
+
+.rank-position {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.position-number {
+  color: var(--accent-text);
+  font-weight: 600;
+  min-width: 20px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.rank-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.rank-username {
+  flex: 1;
+  color: var(--fg);
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.rank-coins {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.coin-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.coin-amount {
+  color: var(--accent-text);
+  font-weight: 600;
+}
