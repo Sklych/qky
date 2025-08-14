@@ -83,7 +83,7 @@
   height: 16px;
 }
 
-.task-action {
+.go-task-action {
   background: var(--task-available-to-complete-background-color);
   color: var(--task-available-to-complete-text-color);
   border: none;
@@ -91,6 +91,23 @@
   padding: 6px 12px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.claim-task-action {
+  background: var(--accent);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.claim-task-action:disabled {
+  background: var(--accent-disabled);
+  color: var(--accent-text-disabled);
+  cursor: not-allowed;
+  /* opacity: 0.8; */
 }
 
 .task-completed {

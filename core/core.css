@@ -4,6 +4,8 @@
     --muted: #9aa4b2;
     --accent: var(--tg-theme-button-color, #3b82f6);
     --accent-text: var(--tg-theme-button-text-color, #ffffff);
+    --accent-disabled: color-mix(in srgb, var(--accent) 50%, #555 50%);
+    --accent-text-disabled: color-mix(in srgb, var(--accent-text) 50%, #999 50%);
     --outline: color-mix(in oklab, var(--accent) 35%, #000 65%);
   
     --key-size: min(22vw, 110px);

@@ -147,7 +147,7 @@
   
   .stat-card {
     flex: 1; /* equal width for all cards */
-    background: var(--secondary);
+    background: var(--secondary-light);
     border-radius: var(--radius-2xl);
     padding: 12px;
     display: flex;
