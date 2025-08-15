@@ -67,3 +67,44 @@
     filter: brightness(0.8);
     transition: filter 0.2s ease-in-out;
   }
+
+  .snackbar {
+    position: fixed;
+    top: -80px;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary);
+    color: var(--fg);
+    border: 2px solid var(--secondary-light);
+    border-radius: 16px;
+    padding: 12px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-weight: 500;
+    transition: top 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    z-index: 9999;
+    box-sizing: border-box;
+  }
+  
+  .snackbar.show {
+    top: 48px;
+    opacity: 1;
+  }
+  
+  .snackbar.show {
+    top: 48px;
+    opacity: 1;
+  }
+  
+  .snackbar-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .snackbar-text {
+    font-size: 16px;
+  }
+  

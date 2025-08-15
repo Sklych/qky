@@ -1,0 +1,154 @@
+.received-from-friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 4px;               
+  margin-bottom: 24px;
+}
+
+.received-from-friends-title {
+  color: var(--accent-text);
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.received-from-friends-coin-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.received-from-friends-coin-amount {
+  color: var(--accent-text);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.friend-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 120px 0; 
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-light);
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
+
+.friend-position {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.position-number {
+  color: var(--accent-text);
+  font-weight: 600;
+  min-width: 20px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.friend-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.friend-username {
+  flex: 1;
+  color: var(--fg);
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.friend-coins {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.coin-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.coin-amount {
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+.invite-friends {
+  display: flex;
+  width: calc(100% - 16px);
+  margin: 0 8px 8px;
+  gap: 8px;
+}
+
+.invite-btn {
+  flex: 0 0 80%;
+  background: var(--accent);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.copy-btn img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); 
+}
+
+.copy-btn {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-text);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  background: var(--primary);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.invite-btn {
+  animation: pulse 2s infinite;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1, 1); box-shadow: 0 0 0 rgba(59, 130, 246, 0.7); }
+  50%  { transform: scale(1.01, 1.02); box-shadow: 0 0 8px rgba(59, 130, 246, 0.7); }
+  100% { transform: scale(1, 1); box-shadow: 0 0 0 rgba(59, 130, 246, 0.7); }
+}
