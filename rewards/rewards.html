@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>QuickKeyApp</title>
+    <link rel="stylesheet" href="/core/core.css">
+    <link rel="stylesheet" href="rewards.css">
+    <link rel="stylesheet" href="squad.css">
+    <link rel="stylesheet" href="referrals.css">
+    <link rel="stylesheet" href="users.css">
+    <script src="rewards.js"></script>
+</head>
+
+<body>
+    <div class="tabs">
+        <button class="tab-item">Squad</button>
+        <button class="tab-item">Referral</button>
+        <button class="tab-item">Users</button>
+    </div>
+
+    <div class="squad">
+        <div class="squad-down-timer">
+            <div class="squad-down-timer-title">Squad Race</div>
+            <div class="friend-coins">
+                <span class="squad-down-timer-info">Ends in:</span>
+                <span class="squad-down-timer-info" id="squad-down-timer-text">100,000</span>
+            </div>
+        </div>
+        <div class="squad-item">
+            <div class="squad-position">
+                <span class="my-position-number">#1</span>
+                <img src="../img/twitter-logo.svg" alt="Task" class="squad-item-icon">
+            </div>
+            <div class="squad-item-info">
+                <span class="my-squad-item-title">GANG</span>
+                <div class="squad-item-subtitle">
+                    <img src="../img/demo-coin.svg" alt="Coin" class="coin-icon">
+                    <span class="coin-text">10,000,000</span>
+                </div>
+                <div class="squad-item-subtitle">
+                    <span class="coin-text">1.0</span>
+                    <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                </div>
+            </div>
+
+            <button class="open-squad-action">Open my squad</button>
+            <button class="open-squad-action exit-squad-action">Leave squad</button>
+        </div>
+        <ul class="squad-list">
+            <li class="squad-item">
+                <div class="squad-position">
+                    <span class="position-number">#1</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="squad-item-icon">
+                </div>
+                
+    
+                <div class="squad-item-info">
+                    <span class="squad-item-title">GANG</span>
+                    <div class="squad-item-subtitle">
+                        <img src="../img/demo-coin.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">10,000,000</span>
+                    </div>
+                    <div class="squad-item-subtitle">
+                        <span class="coin-text">0.5</span>
+                        <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                    </div>
+                </div>
+    
+                <button class="open-squad-action">Open</button>
+                <button class="open-squad-action join-squad-action">Join</button>
+            </li>
+            <li class="squad-item">
+                <div class="squad-position">
+                    <span class="position-number">#2</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="squad-item-icon">
+                </div>
+    
+                <div class="squad-item-info">
+                    <span class="squad-item-title">GANG2</span>
+                    <div class="squad-item-subtitle">
+                        <img src="../img/demo-coin.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">10,000,000</span>
+                    </div>
+                </div>
+    
+                <button class="open-squad-action">Open</button>
+                <button class="open-squad-action join-squad-action">Join</button>
+            </li>
+            <li class="squad-item">
+                <div class="squad-position">
+                    <span class="position-number">#3</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="squad-item-icon">
+                </div>
+    
+                <div class="squad-item-info">
+                    <span class="squad-item-title">GANG3</span>
+                    <div class="squad-item-subtitle">
+                        <img src="../img/demo-coin.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">10,000,000</span>
+                    </div>
+                    <div class="squad-item-subtitle">
+                        <span class="coin-text">0.3</span>
+                        <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                    </div>
+                </div>
+    
+                <button class="open-squad-action">Open</button>
+                <button class="open-squad-action join-squad-action">Join</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="referrals">
+        <div class="referrals-down-timer">
+            <div class="referrals-down-timer-title">Referral Race</div>
+            <div class="friend-coins">
+                <span class="referrals-down-timer-info">Ends in:</span>
+                <span class="referrals-down-timer-info" id="referrals-down-timer-text">100,000</span>
+            </div>
+        </div>
+        <div class="referrals-item">
+            <div class="referrals-position">
+                <span class="my-position-number">#1</span>
+                <img src="../img/twitter-logo.svg" alt="Task" class="referrals-item-icon">
+            </div>
+            <div class="referrals-item-info">
+                <span class="my-referrals-item-title">User1</span>
+                <div class="referrals-item-subtitle">
+                    <img src="../img/referral.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">1,000,050</span>
+                </div>
+                <div class="referrals-item-subtitle">
+                    <span class="coin-text">1.0</span>
+                    <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                </div>
+            </div>
+        </div>
+        <ul class="referrals-list">
+            <li class="referrals-item">
+                <div class="referrals-position">
+                    <span class="position-number">#1</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="referrals-item-icon">
+                </div>
+                
+    
+                <div class="referrals-item-info">
+                    <span class="referrals-item-title">User1</span>
+                    <div class="referrals-item-subtitle">
+                        <img src="../img/referral.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">1,000,050</span>
+                    </div>
+                    <div class="referrals-item-subtitle">
+                        <span class="coin-text">0.5</span>
+                        <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                    </div>
+                </div>
+    
+                <button class="open-user-referral-action">Open</button>
+            </li>
+            <li class="referrals-item">
+                <div class="referrals-position">
+                    <span class="position-number">#2</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="referrals-item-icon">
+                </div>
+    
+                <div class="referrals-item-info">
+                    <span class="referrals-item-title">User2</span>
+                    <div class="referrals-item-subtitle">
+                        <img src="../img/referral.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">1,000</span>
+                    </div>
+                </div>
+    
+                <button class="open-user-referral-action">Open</button>
+            </li>
+            <li class="referrals-item">
+                <div class="referrals-position">
+                    <span class="position-number">#3</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="referrals-item-icon">
+                </div>
+    
+                <div class="referrals-item-info">
+                    <span class="referrals-item-title">User3</span>
+                    <div class="referrals-item-subtitle">
+                        <img src="../img/referral.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">100</span>
+                    </div>
+                    <div class="referrals-item-subtitle">
+                        <span class="coin-text">0.3</span>
+                        <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                    </div>
+                </div>
+    
+                <button class="open-user-referral-action">Open</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="users">
+        <div class="users-down-timer">
+            <div class="users-down-timer-title">Users Race</div>
+            <div class="friend-coins">
+                <span class="users-down-timer-info">Ends in:</span>
+                <span class="users-down-timer-info" id="users-down-timer-text">100,000</span>
+            </div>
+        </div>
+        <div class="users-item">
+            <div class="users-position">
+                <span class="my-position-number">#1</span>
+                <img src="../img/twitter-logo.svg" alt="Task" class="users-item-icon">
+            </div>
+            <div class="users-item-info">
+                <span class="my-users-item-title">GANG</span>
+                <div class="users-item-subtitle">
+                    <img src="../img/demo-coin.svg" alt="Coin" class="coin-icon">
+                    <span class="coin-text">10,000,000</span>
+                </div>
+                <div class="users-item-subtitle">
+                    <span class="coin-text">1.0</span>
+                    <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                </div>
+            </div>
+
+            <button class="open-user-action">Open</button>
+        </div>
+        <ul class="users-list">
+            <li class="users-item">
+                <div class="users-position">
+                    <span class="position-number">#1</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="users-item-icon">
+                </div>
+                
+    
+                <div class="users-item-info">
+                    <span class="users-item-title">GANG</span>
+                    <div class="users-item-subtitle">
+                        <img src="../img/demo-coin.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">10,000,000</span>
+                    </div>
+                    <div class="users-item-subtitle">
+                        <span class="coin-text">0.5</span>
+                        <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                    </div>
+                </div>
+    
+                <button class="open-user-action">Open</button>
+            </li>
+            <li class="users-item">
+                <div class="users-position">
+                    <span class="position-number">#2</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="users-item-icon">
+                </div>
+    
+                <div class="users-item-info">
+                    <span class="users-item-title">GANG2</span>
+                    <div class="users-item-subtitle">
+                        <img src="../img/demo-coin.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">10,000,000</span>
+                    </div>
+                </div>
+    
+                <button class="open-user-action">Open</button>
+            </li>
+            <li class="users-item">
+                <div class="users-position">
+                    <span class="position-number">#3</span>
+                    <img src="../img/twitter-logo.svg" alt="Task" class="users-item-icon">
+                </div>
+    
+                <div class="users-item-info">
+                    <span class="users-item-title">GANG3</span>
+                    <div class="users-item-subtitle">
+                        <img src="../img/demo-coin.svg" alt="Coin" class="coin-icon">
+                        <span class="coin-text">10,000,000</span>
+                    </div>
+                    <div class="users-item-subtitle">
+                        <span class="coin-text">0.3</span>
+                        <img src="../img/toncoin-ton-logo.svg" alt="Coin" class="coin-icon">
+                    </div>
+                </div>
+    
+                <button class="open-user-action">Open</button>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="bottom-nav">
+        <div class="create-squad">
+            <button class="create-btn">CREATE A SQUAD</button>
+        </div>
+
+        <div class="invite-friends">
+            <button class="invite-btn">INVITE A FRIEND</button>
+            <button class="copy-btn" id="copy-btn">
+                <span>COPY</span>
+                <img src="../img/copy.svg" alt="Copy">
+            </button>
+        </div>
+    
+        <div class="nav-items">
+            <button class="nav-item active">
+                <img src="../img/typing.svg" alt="Typing">
+                <span>Typing</span>
+            </button>
+            <button class="nav-item">
+                <img src="../img/shop.svg" alt="Upgrade">
+                <span>Upgrade</span>
+            </button>
+            <button class="nav-item">
+                <img src="../img/rank.svg" alt="Friends">
+                <span>Friends</span>
+            </button>
+            <button class="nav-item">
+                <img src="../img/settings.svg" alt="Rewards">
+                <span>Rewards</span>
+            </button>
+            <button class="nav-item">
+                <img src="../img/settings.svg" alt="Cashout">
+                <span>Cashout</span>
+            </button>
+        </div>
+    </nav>
+</body>
+
+</html>

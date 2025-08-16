@@ -1,110 +1,124 @@
 :root {
-    --bg: #000000;
-    --fg: #e5e7eb;
-    --muted: #9aa4b2;
-    --accent: var(--tg-theme-button-color, #3b82f6);
-    --accent-text: var(--tg-theme-button-text-color, #ffffff);
-    --accent-disabled: color-mix(in srgb, var(--accent) 50%, #555 50%);
-    --accent-text-disabled: color-mix(in srgb, var(--accent-text) 50%, #999 50%);
-    --outline: color-mix(in oklab, var(--accent) 35%, #000 65%);
-  
-    --key-size: min(22vw, 110px);
-    --radius-2xl: 24px;
-    --shadow-soft: 0 10px 30px rgba(0,0,0,.35);
-    --primary: black;
-    --secondary: rgba(255,255,255,0.05);
-    --secondary-light: rgba(255, 255, 255, 0.1);
-  }
+  --bg: #000000;
+  --fg: #e5e7eb;
+  --muted: #9aa4b2;
+  --accent: var(--tg-theme-button-color, #3b82f6);
+  --accent-text: var(--tg-theme-button-text-color, #ffffff);
+  --accent-disabled: color-mix(in srgb, var(--accent) 50%, #555 50%);
+  --accent-text-disabled: color-mix(in srgb, var(--accent-text) 50%, #999 50%);
+  --outline: color-mix(in oklab, var(--accent) 35%, #000 65%);
 
-  * { box-sizing: border-box; }
-  html, body { height: 100%; margin: 0; }
-  body {
-    background: #000000;
-    color: var(--fg);
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: max(20px, env(safe-area-inset-top)) 
-             max(20px, env(safe-area-inset-right)) 
-             max(20px, env(safe-area-inset-bottom)) 
-             max(20px, env(safe-area-inset-left));
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-    overflow: scroll;
-  }
+  --key-size: min(22vw, 110px);
+  --radius-2xl: 24px;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, .35);
+  --primary: black;
+  --secondary: rgba(255, 255, 255, 0.05);
+  --secondary-light: rgba(255, 255, 255, 0.1);
 
-  .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: var(--primary);
-    display: flex;
-    justify-content: space-around;
-    padding: 8px 0;
-    border-top: 1px solid rgba(255,255,255,0.1);
-  }
-  
-  .nav-item {
-    background: none;
-    border: none;
-    color: var(--muted);
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    flex: 1;
-    padding: 6px 0;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
-  }
-  
-  .nav-item img {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0.8);
-    transition: filter 0.2s ease-in-out;
-  }
+  --positive: #22c55e;
+  --positive-light: color-mix(in srgb, var(--positive) 70%, white 30%);
+  --positive-dark: color-mix(in srgb, var(--positive) 70%, black 30%);
+  --positive-text: #ffffff;
 
-  .snackbar {
-    position: fixed;
-    top: -80px;
-    left: 12px;
-    right: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--primary);
-    color: var(--fg);
-    border: 2px solid var(--secondary-light);
-    border-radius: 16px;
-    padding: 12px 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    font-weight: 500;
-    transition: top 0.4s ease, opacity 0.4s ease;
-    opacity: 0;
-    z-index: 9999;
-    box-sizing: border-box;
-  }
-  
-  .snackbar.show {
-    top: 48px;
-    opacity: 1;
-  }
-  
-  .snackbar.show {
-    top: 48px;
-    opacity: 1;
-  }
-  
-  .snackbar-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .snackbar-text {
-    font-size: 16px;
-  }
-  
+  --negative: #ef4444;
+  --negative-light: color-mix(in srgb, var(--negative) 70%, white 30%);
+  --negative-dark: color-mix(in srgb, var(--negative) 70%, black 30%);
+  --negative-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #000000;
+  color: var(--fg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  overflow: scroll;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  padding: 6px 0;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-item img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0.8);
+  transition: filter 0.2s ease-in-out;
+}
+
+.snackbar {
+  position: fixed;
+  top: -80px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: var(--fg);
+  border: 2px solid var(--secondary-light);
+  border-radius: 16px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  transition: top 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+.snackbar.show {
+  top: 48px;
+  opacity: 1;
+}
+
+.snackbar.show {
+  top: 48px;
+  opacity: 1;
+}
+
+.snackbar-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.snackbar-text {
+  font-size: 16px;
+}

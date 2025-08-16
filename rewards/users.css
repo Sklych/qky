@@ -1,0 +1,147 @@
+.users-list {
+  list-style: none;
+  margin-top: 24px;
+  padding: 0;
+  padding-bottom: 80px;
+}
+
+.users-item {
+  display: flex;
+  align-items: center;
+  background: var(--secondary-light);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.users-item-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.users-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.users-item-title {
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.users-item-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.coin-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.open-users-action {
+  background: var(--accent);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.users-position {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.position-number {
+  color: var(--accent-text);
+  font-weight: 600;
+  min-width: 20px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.current-user-users {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-light);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.rank-username.current-user {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.my-users-item-title {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.my-position-number {
+  color: var(--accent);
+  font-weight: 600;
+  min-width: 20px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--primary);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.users-down-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.users-down-timer-title {
+  color: var(--accent-text);
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.users-down-timer-info {
+  color: var(--mute);
+  font-size: 16px;
+}
+
+.open-user-action {
+  background: var(--positive);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
