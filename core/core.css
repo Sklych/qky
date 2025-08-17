@@ -24,6 +24,8 @@
   --negative-light: color-mix(in srgb, var(--negative) 70%, white 30%);
   --negative-dark: color-mix(in srgb, var(--negative) 70%, black 30%);
   --negative-text: #ffffff;
+
+  --neutral: white;
 }
 
 * {
@@ -122,3 +124,72 @@ body {
 .snackbar-text {
   font-size: 16px;
 }
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.dialog-box {
+  background: var(--primary);
+  border: 2px solid var(--secondary-light);
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: var(--radius-2xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.dialog-title {
+  color: var(--accent-text);
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.dialog-description {
+  color: var(--muted);
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.dialog-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.dialog-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dialog-primary-btn {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.dialog-secondary-btn {
+  background: white;
+  color: black;
+}
+
+

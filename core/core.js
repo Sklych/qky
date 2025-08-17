@@ -39,5 +39,53 @@ function showSnackbar(message, iconSrc = null, duration = 3000) {
   }, duration);
 }
 
+function showDialog({ 
+  title, 
+  description, 
+  primaryText, 
+  primaryStyle = "accent", // "accent" | "negative" | "neutral"
+  onPrimary = null, 
+  secondaryStyle = null, // "accent" | "negative" | "neutral"
+  secondaryText = null, 
+  onSecondary = null 
+}) {
+  const dialog = document.getElementById("confirmationDialog");
+  const titleEl = document.getElementById("dialogTitle");
+  const descEl = document.getElementById("dialogDescription");
+  const primaryBtn = document.getElementById("dialogPrimaryBtn");
+  const secondaryBtn = document.getElementById("dialogSecondaryBtn");
+
+  titleEl.textContent = title;
+  descEl.textContent = description;
+
+  const styleMap = {
+    accent: { bg: "var(--accent)", text: "var(--accent-text)" },
+    negative: { bg: "var(--negative)", text: "var(--accent-text)" },
+    neutral: { bg: "white", text: "black" }
+  };
+
+  primaryBtn.textContent = primaryText;
+  primaryBtn.style.background = styleMap[primaryStyle].bg;
+  primaryBtn.style.color = styleMap[primaryStyle].text;
+  primaryBtn.onclick = () => {
+    if (onPrimary) onPrimary(dialog);
+  };
+
+  if (secondaryText) {
+    secondaryBtn.style.display = "block";
+    secondaryBtn.textContent = secondaryText;
+    secondaryBtn.style.background = styleMap[secondaryStyle].bg;
+    secondaryBtn.style.color = styleMap[secondaryStyle].text;
+    secondaryBtn.onclick = () => {
+      if (onSecondary) onSecondary(dialog);
+    };
+  } else {
+    secondaryBtn.style.display = "none";
+  }
+
+  dialog.style.display = "flex";
+}
+
 // define global functions
 window.showSnackbar = showSnackbar;
+window.showDialog = showDialog;
