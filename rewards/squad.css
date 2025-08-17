@@ -48,8 +48,8 @@
 }
 
 .open-squad-action {
-  background: var(--accent);
-  color: var(--accent-text);
+  background: white;
+  color: black;
   border: none;
   border-radius: 6px;
   padding: 6px 12px;
@@ -58,11 +58,13 @@
 }
 
 .exit-squad-action {
+  color: var(--accent-text);
   background: var(--negative);
 }
 
 .join-squad-action {
-  background: var(--positive);
+  color: var(--accent-text);
+  background: var(--accent);
 }
 
 .squad-position {

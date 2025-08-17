@@ -47,15 +47,7 @@
   height: 16px;
 }
 
-.open-users-action {
-  background: var(--accent);
-  color: var(--accent-text);
-  border: none;
-  border-radius: 6px;
-  padding: 6px 12px;
-  font-weight: 600;
-  cursor: pointer;
-}
+
 
 .users-position {
   display: flex;
@@ -137,8 +129,8 @@
 }
 
 .open-user-action {
-  background: var(--positive);
-  color: var(--accent-text);
+  background: white;
+  color: black;
   border: none;
   border-radius: 6px;
   padding: 6px 12px;

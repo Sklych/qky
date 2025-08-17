@@ -1,11 +1,49 @@
-.referrals-list {
+.squad-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 8px;               
+  margin-bottom: 24px;
+}
+
+.squad-title {
+  color: var(--accent-text);
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.squad-subtitle {
+  color: var(--mute);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.squad-coin-text {
+  color: var(--mute);
+  font-size: 24px;
+}
+
+.squad-coin-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.squad-coins {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.squad-list {
   list-style: none;
   margin-top: 24px;
   padding: 0;
   padding-bottom: 80px;
 }
 
-.referrals-item {
+.squad-item {
   display: flex;
   align-items: center;
   background: var(--secondary-light);
@@ -15,25 +53,29 @@
   gap: 12px;
 }
 
-.referrals-item-icon {
+.squad-item-icon {
   width: 36px;
   height: 36px;
   border-radius: 8px;
 }
 
-.referrals-item-info {
+.squad-user-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
 }
 
-.referrals-item-title {
+.squad-user-title {
   font-weight: 600;
   color: var(--fg);
 }
 
-.referrals-item-subtitle {
+.me-squad-user-title {
+  color: var(--accent);
+}
+
+.squad-user-subtitle {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -47,17 +89,7 @@
   height: 16px;
 }
 
-.open-user-referral-action {
-  background: white;
-  color: black;
-  border: none;
-  border-radius: 6px;
-  padding: 6px 12px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.referrals-position {
+.squad-position {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -65,34 +97,6 @@
 
 .position-number {
   color: var(--accent-text);
-  font-weight: 600;
-  min-width: 20px;
-  font-size: 20px;
-  text-align: right;
-}
-
-.current-user-referrals {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--secondary-light);
-  padding: 8px 12px;
-  border-radius: 8px;
-  margin-bottom: 24px;
-}
-
-.rank-username.current-user {
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.my-referrals-item-title {
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.my-position-number {
-  color: var(--accent);
   font-weight: 600;
   min-width: 20px;
   font-size: 20px;
@@ -116,15 +120,42 @@
   justify-content: space-around;
 }
 
-.invite-friends {
+.delete-user-from-squad-action {
+  background: var(--negative);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-user {
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.squad-buttons{
   display: flex;
   width: calc(100% - 16px);
   margin: 0 8px 8px;
   gap: 8px;
 }
 
-.invite-btn {
-  flex: 0 0 80%;
+.join-squad-buttons {
+  display: flex;
+  width: calc(100% - 16px);
+  margin: 0 8px 8px;
+  gap: 8px;
+}
+
+.join-btn {
+  flex: 0 0 100%;
   background: var(--accent);
   color: var(--accent-text);
   border: none;
@@ -136,25 +167,26 @@
   transform-origin: center;
 }
 
-.copy-btn {
-  flex: 0 0 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: 8px;
-  background: var(--accent);
+.leave-btn {
+  flex: 0 0 50%;
+  background: var(--negative);
   color: var(--accent-text);
   border: none;
+  border-radius: 8px;
+  padding: 10px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.copy-btn img {
-  width: 24px;
-  height: 24px;
-  filter: brightness(0) invert(1);
+.invite-btn {
+  flex: 0 0 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 @keyframes pulse {
@@ -172,24 +204,4 @@
     transform: scale(1, 1);
     box-shadow: 0 0 0 rgba(59, 130, 246, 0.7);
   }
-}
-
-.referrals-down-timer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  margin-bottom: 24px;
-}
-
-.referrals-down-timer-title {
-  color: var(--accent-text);
-  font-weight: 600;
-  font-size: 28px;
-  margin-bottom: 8px;
-}
-
-.referrals-down-timer-info {
-  color: var(--mute);
-  font-size: 16px;
 }
