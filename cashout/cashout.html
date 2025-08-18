@@ -6,10 +6,29 @@
     <title>QuickKeyApp</title>
     <link rel="stylesheet" href="/core/core.css">
     <link rel="stylesheet" href="cashout.css">
+    <link rel="stylesheet" href="withdraw-confirmation-bs.css">
     <script src="cashout.js"></script>
 </head>
 
 <body>
+
+    <div class="confirmation-bottom-sheet" id="withdrawContainer">
+        <div class="withdraw-overlay" id="withdrawOverlay"></div>
+        <div class="withdraw-sheet" id="withdrawSheet">
+            <button class="withdraw-close" id="withdrawClose">×</button>
+            <div class="withdraw-title">Withdraw confirmation?</div>
+            <div style="height:8px"></div>
+            <div class="withdraw-row">
+                <span>100,000</span>
+                <img src="../img/demo-coin.svg" alt="coin">
+                <span>=</span>
+                <span>0.5</span>
+                <img src="../img/toncoin-ton-logo.svg" alt="ton">
+            </div>
+            <button class="withdraw-btn" id="withdrawBtn">Withdraw</button>
+        </div>
+    </div>
+
     <header class="profile">
         <img src="../img/demo-avatar.png" alt="User Avatar" class="avatar">
         <div class="profile-text">
@@ -370,7 +389,7 @@
 
     <nav class="bottom-nav">
         <div class="cashout-buttons">
-            <button class="withdraw-external-btn">
+            <button class="withdraw-external-btn" id="withdraw-external-btn">
                 <span class="btn-icons">
                     <img src="../img/trustwallet.svg" alt="">
                     <img src="../img/metamask.svg" alt="">
@@ -379,7 +398,7 @@
                 </span>
                 Withdraw External
             </button>
-            <button class="withdraw-tg-btn">
+            <button class="withdraw-tg-btn" id="withdraw-tg-btn">
                 <span class="btn-icons">
                     <img src="../img/telegram.svg" alt="">
                 </span>

@@ -1,0 +1,81 @@
+  .withdraw-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+  }
+
+  .withdraw-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+  }
+
+  .withdraw-sheet {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      right: 0;
+      background: var(--primary, #222);
+      border-top: 2px solid var(--secondary-light, #444);
+      border-radius: 24px 24px 0 0;
+      padding: 16px;
+      transition: bottom 0.3s ease;
+      max-height: 90%;
+      overflow-y: auto;
+      z-index: 1001;
+  }
+
+  .withdraw-sheet.active {
+      bottom: 0;
+  }
+
+  .withdraw-title {
+      text-align: center;
+      color: var(--accent-text);
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--accent-text);
+  }
+
+  .withdraw-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 12px 0;
+      color: #fff;
+      font-weight: 500;
+  }
+
+  .withdraw-row img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .withdraw-btn {
+      width: 100%;
+      background: var(--accent, #2979ff);
+      color: var(--accent-text, #fff);
+      border: none;
+      border-radius: 24px;
+      padding: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 16px;
+  }
+
+  .withdraw-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      color: var(--accent-text, #fff);
+      cursor: pointer;
+      font-weight: bold;
+      line-height: 1;
+  }
