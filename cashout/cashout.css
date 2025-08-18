@@ -141,10 +141,29 @@
   gap: 8px;
 }
 
+.cashout-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+
 .withdraw-external-btn {
   flex: 0 0 50%;
-  background: var(--negative);
-  color: var(--accent-text);
+  background: white;
+  color: black;
   border: none;
   border-radius: 8px;
   padding: 10px;
