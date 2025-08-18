@@ -1,0 +1,73 @@
+.connect-wallet-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;               
+  margin-bottom: 24px;
+}
+
+.connect-wallet-title {
+  color: var(--accent-text);
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.connect-wallet-input {
+  display: block;
+  width: 100%;
+  min-height: 180px;
+  background: var(--primary);
+  color: #fff;
+  border: 2px solid var(--secondary-light);
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.connect-wallet-input::placeholder {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.connect-wallet-input:focus {
+  border-color: #fff;
+}
+
+.connect-wallet-btn {
+  width: 100%;
+  background: var(--accent);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.connect-wallet-error {
+  font-size: 14px;
+  color: var(--negative);
+  font-weight: 400;
+  display: none;
+}
+
+.connect-wallet-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.connect-wallet-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.connect-wallet-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

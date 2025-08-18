@@ -1,33 +1,20 @@
 window.onload = function () {
-    const input = document.querySelector(".create-squad-input");
-  const button = document.querySelector(".create-squad-btn");
-  const errorEl = document.getElementById("squadError");
+  const input = document.querySelector(".create-squad-input");
 
-  function updateButtonState() {
-    const value = input.value.trim();
-
-    if (value.length === 0) {
-      // No input
-      button.style.background = "var(--accent-disabled)";
-      button.disabled = true;
-      errorEl.style.display = "none";
-    } else if (value.length > 30) {
-      // Too long
-      button.style.background = "var(--accent-disabled)";
-      button.disabled = true;
-      errorEl.textContent = "Squad title cannot exceed 30 characters";
-      errorEl.style.display = "block";
+  document.getElementById("create-squad-btn").addEventListener("click", () => {
+    const squadTitle = input.value.trim()
+    if (!squadTitle || squadTitle.length < 3) {
+        const message = "Squad title must be at least 3 characters";
+        const icon = "../img/error.svg"
+        const duration = 1200;
+        showSnackbar(message, icon, duration);
+    } else if (squadTitle.length > 30) {
+        const message = "Squad title cannot exceed 30 characters";
+        const icon = "../img/error.svg"
+        const duration = 1200;
+        showSnackbar(message, icon, duration);
     } else {
-      // Valid input
-      button.style.background = "var(--accent)";
-      button.disabled = false;
-      errorEl.style.display = "none";
+      // success
     }
-  }
-
-  // Initial state
-  updateButtonState();
-
-  // Update on input change
-  input.addEventListener("input", updateButtonState);
+  })
 }
