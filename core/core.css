@@ -88,8 +88,8 @@ body {
 .snackbar {
   position: fixed;
   top: -80px;
-  left: 12px;
-  right: 12px;
+  left: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
