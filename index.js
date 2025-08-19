@@ -28,7 +28,12 @@ function setKeyLightColor(color) {
   });
 }
 
+const tg = window.Telegram.WebApp;
+tg.ready();
 window.onload = function () {
+
+  console.log(`Index.js init tg=${JSON.stringify(tg)}`)
+
   setupNavigationClickListeners()
   setTimeout(() => {
     setKeyLightColor('rgba(255, 0, 0, 0.6)');
