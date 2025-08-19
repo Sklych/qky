@@ -5,8 +5,8 @@
 }
 
 .tabs {
-  width: calc(100% - 16px); /* -16 because (3 - 1) tabs */
-  position: fixed;
+  width: calc(100%);
+  position: sticky;
   display: flex;
   top: 0;
   background: var(--primary);
