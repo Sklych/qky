@@ -1,7 +1,11 @@
 const telegramWA =  window.Telegram && window.Telegram.WebApp;
+console.log(`Telegram webAppVersion telegramWA=${telegramWA}`)
 if (telegramWA) {
   telegramWA.ready();
-  console.log(`Telegram webAppVersion ${telegramWA.initParams && telegramWA.initParams.tgWebAppVersion}`)
+  console.log(`Telegram webAppVersion telegramWA.initDataUnsafe=${telegramWA.initDataUnsafe}`)
+  console.log(`Telegram webAppVersion telegramWA.initParams=${telegramWA.initParams}`)
+  console.log(`Telegram webAppVersion telegramWA.initParams.tgWebAppVersion=${telegramWA.initParams && telegramWA.initParams.tgWebAppVersion}`)
+  console.log(`Telegram webAppVersion telegramWA.version=${telegramWA.version}`)
 }
 
 const appConfig = {
