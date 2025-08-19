@@ -2,7 +2,18 @@ const telegramWA =  window.Telegram && window.Telegram.WebApp;
 console.log(`Telegram webAppVersion telegramWA=${telegramWA}`)
 if (telegramWA) {
   telegramWA.ready();
+
+  telegramWA.BackButton.show();
+  telegramWA.BackButton.onClick(() => {
+    alert("Back button pressed");
+    telegramWA.BackButton.hide(); // optional
+  });
+  
+  console.log(`window.Telegram.WebView=${window.Telegram.WebView}`)
+  console.log(`window.Telegram.WebView.initParams=${window.Telegram.WebView.initParams}`)
+  console.log(`Telegram webAppVersion telegramWA.initData=${telegramWA.initData}`)
   console.log(`Telegram webAppVersion telegramWA.initDataUnsafe=${telegramWA.initDataUnsafe}`)
+  console.log(`Telegram webAppVersion telegramWA.user=${telegramWA.initDataUnsafe && telegramWA.initDataUnsafe.user}`)
   console.log(`Telegram webAppVersion telegramWA.initParams=${telegramWA.initParams}`)
   console.log(`Telegram webAppVersion telegramWA.initParams.tgWebAppVersion=${telegramWA.initParams && telegramWA.initParams.tgWebAppVersion}`)
   console.log(`Telegram webAppVersion telegramWA.version=${telegramWA.version}`)
