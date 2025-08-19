@@ -56,27 +56,34 @@ function countDownTimer(timerElement) {
   setInterval(updateTimer, 1000);
 }
 
+const tg = window.Telegram.WebApp;
+tg.ready();
 window.onload = function () {
-  const telegramWA =  window.Telegram && window.Telegram.WebApp;
-  console.log(`Telegram webAppVersion telegramWA=${telegramWA}`)
-  if (telegramWA) {
-    telegramWA.ready();
-    console.log(`Telegram webAppVersion DOUBLE CHECK telegramWA=${telegramWA}`)
+  const telegramWA = tg;
+  console.log(`Telegram webAppVersion tg=${tg}`)
+  if (tg) {
+    console.log(`Telegram webAppVersion DOUBLE CHECK tg=${tg}`)
 
-    telegramWA.BackButton.show();
-    telegramWA.BackButton.onClick(() => {
+    tg.BackButton.show();
+    tg.BackButton.onClick(() => {
       alert("Back button pressed");
-      telegramWA.BackButton.hide(); // optional
+      tg.BackButton.hide(); // optional
     });
     
+    console.log(`tg=${JSON.stringify(tg)}`)
+    console.log(`tg.initData=${JSON.stringify(tg.initData)}`)
+    console.log(`tg.initDataUnsafe=${JSON.stringify(tg.initDataUnsafe)}`)
+    console.log(`tg.initDataUnsafe.user=${JSON.stringify(tg.initDataUnsafe.user)}`)
+
     console.log(`window.Telegram.WebView=${window.Telegram.WebView}`)
     console.log(`window.Telegram.WebView.initParams=${window.Telegram.WebView.initParams}`)
-    console.log(`Telegram webAppVersion telegramWA.initData=${telegramWA.initData}`)
-    console.log(`Telegram webAppVersion telegramWA.initDataUnsafe=${telegramWA.initDataUnsafe}`)
-    console.log(`Telegram webAppVersion telegramWA.user=${telegramWA.initDataUnsafe && telegramWA.initDataUnsafe.user}`)
-    console.log(`Telegram webAppVersion telegramWA.initParams=${telegramWA.initParams}`)
-    console.log(`Telegram webAppVersion telegramWA.initParams.tgWebAppVersion=${telegramWA.initParams && telegramWA.initParams.tgWebAppVersion}`)
-    console.log(`Telegram webAppVersion telegramWA.version=${telegramWA.version}`)
+    console.log(`Telegram webAppVersion tg.initData=${tg.initData}`)
+    console.log(`Telegram webAppVersion tg.initDataUnsafe=${tg.initDataUnsafe}`)
+    console.log(`Telegram webAppVersion tg.user=${tg.initDataUnsafe && tg.initDataUnsafe.user}`)
+    console.log(`Telegram webAppVersion tg.user2=${tg.initDataUnsafe.user}`)
+    console.log(`Telegram webAppVersion tg.initParams=${tg.initParams}`)
+    console.log(`Telegram webAppVersion tg.initParams.tgWebAppVersion=${tg.initParams && tg.initParams.tgWebAppVersion}`)
+    console.log(`Telegram webAppVersion tg.version=${tg.version}`)
   }
 
   setupNavigationClickListeners();
