@@ -28,11 +28,7 @@ function setKeyLightColor(color) {
   });
 }
 
-const tg = window.Telegram.WebApp;
-tg.ready();
 window.onload = function () {
-
-  console.log(`Index.js init tg=${JSON.stringify(tg)}`)
 
   setupNavigationClickListeners()
   setTimeout(() => {
