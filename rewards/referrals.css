@@ -118,13 +118,14 @@
 
 .invite-friends {
   display: flex;
-  width: calc(100% - 16px);
-  margin: 0 8px 8px;
+  width: calc(100% - 24px);
+  margin-left: 8px;
+  margin-right: 8px;
   gap: 8px;
 }
 
 .invite-btn {
-  flex: 0 0 80%;
+  flex: 0 0 70%;
   background: var(--accent);
   color: var(--accent-text);
   border: none;
@@ -137,7 +138,7 @@
 }
 
 .copy-btn {
-  flex: 0 0 20%;
+  flex: 0 0 30%;
   display: flex;
   align-items: center;
   justify-content: center;
