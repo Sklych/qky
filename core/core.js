@@ -1,13 +1,14 @@
 const telegramWA =  window.Telegram && window.Telegram.WebApp;
 if (telegramWA) {
   telegramWA.ready();
-  console.log(`core.js init tg=${JSON.stringify(telegramWA)}`)
 }
 
 const appConfig = {
     enableLogs: true,
     telegramWebApp: telegramWA
 };
+
+console.log(`core.js init tg=${JSON.stringify(telegramWA)}`)
 
 if (!appConfig.enableLogs) {
     console.log = function () {};

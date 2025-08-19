@@ -56,35 +56,7 @@ function countDownTimer(timerElement) {
   setInterval(updateTimer, 1000);
 }
 
-const tg = window.Telegram.WebApp;
-tg.ready();
 window.onload = function () {
-  console.log(`Telegram webAppVersion tg=${tg}`)
-  if (tg) {
-    console.log(`Telegram webAppVersion DOUBLE CHECK tg=${tg}`)
-
-    tg.BackButton.show();
-    tg.BackButton.onClick(() => {
-      alert("Back button pressed");
-      tg.BackButton.hide(); // optional
-    });
-    
-    console.log(`tg=${JSON.stringify(tg)}`)
-    console.log(`tg.initData=${JSON.stringify(tg.initData)}`)
-    console.log(`tg.initDataUnsafe=${JSON.stringify(tg.initDataUnsafe)}`)
-    console.log(`tg.initDataUnsafe.user=${JSON.stringify(tg.initDataUnsafe.user)}`)
-
-    console.log(`window.Telegram.WebView=${window.Telegram.WebView}`)
-    console.log(`window.Telegram.WebView.initParams=${window.Telegram.WebView.initParams}`)
-    console.log(`Telegram webAppVersion tg.initData=${tg.initData}`)
-    console.log(`Telegram webAppVersion tg.initDataUnsafe=${tg.initDataUnsafe}`)
-    console.log(`Telegram webAppVersion tg.user=${tg.initDataUnsafe && tg.initDataUnsafe.user}`)
-    console.log(`Telegram webAppVersion tg.user2=${tg.initDataUnsafe.user}`)
-    console.log(`Telegram webAppVersion tg.initParams=${tg.initParams}`)
-    console.log(`Telegram webAppVersion tg.initParams.tgWebAppVersion=${tg.initParams && tg.initParams.tgWebAppVersion}`)
-    console.log(`Telegram webAppVersion tg.version=${tg.version}`)
-  }
-
   setupNavigationClickListeners();
 
   document.getElementById("openSquadBtn").addEventListener("click", () => {
