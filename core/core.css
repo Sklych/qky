@@ -106,13 +106,9 @@ body {
   box-sizing: border-box;
 }
 
-.snackbar.show {
-  top: 48px;
-  opacity: 1;
-}
 
 .snackbar.show {
-  top: 48px;
+  top: 8px;
   opacity: 1;
 }
 
