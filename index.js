@@ -12,7 +12,7 @@ function setupNavigationClickListeners() {
       } else if (id === 'navFriends') {
         window.location.href = 'friends/friends.html';
       } else if (id === 'navRewards') {
-        window.location.href = '/rewards/rewards.html';
+        window.location.href = 'rewards/rewards.html';
       } else if (id === 'navCashout') {
         window.location.href = 'cashout/cashout.html';
       }
