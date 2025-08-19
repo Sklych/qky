@@ -5,7 +5,7 @@
 }
 
 .tabs {
-  width: 100%;
+  width: calc(100% - 16px); /* -16 because (3 - 1) tabs */
   position: fixed;
   display: flex;
   top: 0;
