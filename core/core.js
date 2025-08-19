@@ -1,3 +1,13 @@
+const appConfig = {
+    insideMiniApp: window.Telegram && window.Telegram.WebApp,
+    enableLogs: true,
+};
+
+if (!appConfig.enableLogs) {
+    console.log = function () {};
+    console.error = function() {};
+}
+
 let currentSnackbar = null;
 
 function showSnackbar(message, iconSrc = null, duration = 3000) {
@@ -89,3 +99,4 @@ function showDialog({
 // define global functions
 window.showSnackbar = showSnackbar;
 window.showDialog = showDialog;
+window.appConfig = appConfig;

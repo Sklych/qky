@@ -1,10 +1,35 @@
-function setKeyLightColor(color) {
-    document.querySelectorAll('.key').forEach(key => {
-      key.style.boxShadow = `0 0 20px ${color}, 0 10px 30px rgba(0,0,0,.35)`;
+function setupNavigationClickListeners() {
+  const navItems = document.querySelectorAll('.nav-item');
+
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const id = item.id;
+
+      if (id === 'navTyping') {
+        // ignore
+      } else if (id === 'navUpgrade') {
+        window.location.href = '../upgrade/upgrade.html';
+      } else if (id === 'navFriends') {
+        window.location.href = '../friends/friends.html';
+      } else if (id === 'navRewards') {
+        window.location.href = '../rewards/rewards.html';
+      } else if (id === 'navCashout') {
+        window.location.href = '../cashout/cashout.html';
+      }
     });
-  }
-  
+  });
+}
+
+setupNavigationClickListeners();
+
+function setKeyLightColor(color) {
+  document.querySelectorAll('.key').forEach(key => {
+    key.style.boxShadow = `0 0 20px ${color}, 0 10px 30px rgba(0,0,0,.35)`;
+  });
+}
+
 window.onload = function () {
+  setupNavigationClickListeners()
   setTimeout(() => {
     setKeyLightColor('rgba(255, 0, 0, 0.6)');
   }, 2000);
