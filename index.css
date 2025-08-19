@@ -14,7 +14,7 @@
              max(20px, env(safe-area-inset-left));
     -webkit-tap-highlight-color: transparent;
     position: relative;
-    overflow: scroll;
+    overflow-y: auto;
   }
   
   .animated-bg {
@@ -44,6 +44,7 @@
     align-items: center;     /* center horizontally */
     gap: 16px;
     text-align: center;
+    padding-bottom: 80px;
   }
   
   .keys {
@@ -73,7 +74,6 @@
     color: var(--accent-text);
     text-shadow: 0 1px 0 rgba(0,0,0,.3);
     position: relative;
-    overflow: scroll;
     outline: none;
     cursor: pointer;
     transition: box-shadow 0.2s ease-in-out;

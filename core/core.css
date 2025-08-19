@@ -48,7 +48,7 @@ body {
   padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
   -webkit-tap-highlight-color: transparent;
   position: relative;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .bottom-nav {
