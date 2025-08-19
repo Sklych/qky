@@ -1,11 +1,11 @@
 window.onload = function () {
-  if (window.appConfig.insideMiniApp) {
-    Telegram.WebApp.BackButton.show();
-    Telegram.WebApp.BackButton.onClick(() => {
+  if (window.appConfig.telegramWebApp) {
+    window.appConfig.telegramWebApp.BackButton.show();
+    window.appConfig.telegramWebApp.BackButton.onClick(() => {
       if (navigator.vibrate) {
         navigator.vibrate(50);
       }
-      Telegram.WebApp.BackButton.hide();
+      window.appConfig.telegramWebApp.BackButton.hide();
       window.history.back();
     });
   }

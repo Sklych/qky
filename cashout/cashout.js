@@ -113,15 +113,15 @@ window.onload = function () {
   })
 
   document.getElementById("withdraw-external-btn").addEventListener("click", () => {
-    if (window.appConfig.insideMiniApp && navigator.vibrate) {
+    if (window.appConfig.telegramWebApp && navigator.vibrate) {
       navigator.vibrate(50);
     }
     window.location.href = "../connect-external-wallet/connect-external-wallet.html";
   })
 
   document.getElementById("viewInBlockChainText").addEventListener("click", () => {
-    if (window.appConfig.insideMiniApp) {
-      Telegram.WebApp.openLink("https://tonviewer.com/EQDde3w4YGvwyLci1IWtC2COwFj63dnI-b7QbPolGD7_oO6S", true);
+    if (window.appConfig.telegramWebApp) {
+      window.appConfig.telegramWebApp.openLink("https://tonviewer.com/EQDde3w4YGvwyLci1IWtC2COwFj63dnI-b7QbPolGD7_oO6S", true);
     } else {
       window.open('https://tonviewer.com/EQDde3w4YGvwyLci1IWtC2COwFj63dnI-b7QbPolGD7_oO6S', '_blank');
     }

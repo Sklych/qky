@@ -1,6 +1,12 @@
+const telegramWA =  window.Telegram && window.Telegram.WebApp;
+if (telegramWA) {
+  telegramWA.ready();
+  console.log(`Telegram webAppVersion ${telegramWA.initParams && telegramWA.initParams.tgWebAppVersion}`)
+}
+
 const appConfig = {
-    insideMiniApp: window.Telegram && window.Telegram.WebApp,
     enableLogs: true,
+    telegramWebApp: telegramWA
 };
 
 if (!appConfig.enableLogs) {

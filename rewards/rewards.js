@@ -60,14 +60,14 @@ window.onload = function () {
   setupNavigationClickListeners();
 
   document.getElementById("openSquadBtn").addEventListener("click", () => {
-    if (window.appConfig.insideMiniApp && navigator.vibrate) {
+    if (window.appConfig.telegramWebApp && navigator.vibrate) {
         navigator.vibrate(50);
     }
     window.location.href = "../squad/squad.html";
   })
 
   document.getElementById("createSquadBtn").addEventListener("click", () => {
-    if (window.appConfig.insideMiniApp && navigator.vibrate) {
+    if (window.appConfig.telegramWebApp && navigator.vibrate) {
         navigator.vibrate(50);
     }
     window.location.href = "../create-squad/create-squad.html";
