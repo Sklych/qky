@@ -9,7 +9,7 @@ function setupNavigationClickListeners() {
         if (navigator.vibrate) {
           navigator.vibrate(50);
         }
-        window.location.href = '../main/index.html';
+        window.location.href = '../index.html';
       } else if (id === 'navUpgrade') {
         if (navigator.vibrate) {
           navigator.vibrate(50);

@@ -6,7 +6,7 @@ function setupNavigationClickListeners() {
       const id = item.id;
 
       if (id === 'navTyping') {
-        window.location.href = '../main/index.html';
+        window.location.href = '../index.html';
       } else if (id === 'navUpgrade') {
         // ignore
       } else if (id === 'navFriends') {
