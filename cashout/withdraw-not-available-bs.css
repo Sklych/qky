@@ -1,0 +1,79 @@
+.withdraw-subtitle {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.withdraw-level-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.withdraw-progress-bar {
+  width: 100%;
+  height: 24px;
+  background: var(--primary);
+  border: 1px solid var(--secondary-light);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.withdraw-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.withdraw-title2 {
+  text-align: center;
+  color: var(--mute);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.withdraw-tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--accent-text);
+  text-align: center;
+}
+
+.withdraw-level-text {
+    color: var(--mute);
+    font-weight: 600;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background: var(--secondary-light);
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
+
+.task-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.task-name {
+  color: var(--mute);
+  font-weight: 600;
+  margin-left: 8px;
+  font-size: 16px;
+}

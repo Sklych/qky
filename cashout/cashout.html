@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/core/core.css">
     <link rel="stylesheet" href="cashout.css">
     <link rel="stylesheet" href="withdraw-confirmation-bs.css">
+    <link rel="stylesheet" href="withdraw-not-available-bs.css">
     <script src="cashout.js"></script>
 </head>
 
@@ -28,6 +29,61 @@
             <button class="withdraw-btn" id="withdrawBtn">Withdraw</button>
         </div>
     </div>
+
+    <div class="withdraw-not-avaialable-bottom-sheet" id="withdrawNotAvailableContainer">
+        <div class="withdraw-overlay" id="withdrawNotAvailableOverlay"></div>
+        <div class="withdraw-sheet" id="withdrawNotAvailableSheet">
+            <button class="withdraw-close" id="withdrawNotAvailableClose">×</button>
+
+            <div class="withdraw-title">Keep growing yourself!</div>
+            <div style="height:4px"></div>
+            <div class="withdraw-subtitle">Improve your level loyalty for next withdrawal</div>
+
+            <div class="withdraw-level-info">
+                <span class="withdraw-level-text" id="withdrawNotAvailableLevel">
+                    Level loyalty: 5
+                </span>
+                <div class="withdraw-progress-bar">
+                    <div class="withdraw-progress-fill" id="withdrawNotAvailableProgress"></div>
+                </div>
+            </div>
+
+            <div style="height:16px"></div>
+            <div class="withdraw-title2">What helps improving level?</div>
+            <div style="height:8px"></div>
+
+            <ul class="withdraw-tasks">
+                <li class="task-item">
+                    <img src="../img/demo-avatar.png" alt="Task Avatar" class="task-avatar">
+                    <span class="task-name">Complete tasks</span>
+                </li>
+                <li class="task-item">
+                    <img src="../img/demo-avatar.png" alt="Task Avatar" class="task-avatar">
+                    <span class="task-name">Invite friends</span>
+                </li>
+                <li class="task-item">
+                    <img src="../img/demo-avatar.png" alt="Task Avatar" class="task-avatar">
+                    <span class="task-name">Connect your wallet</span>
+                </li>
+                <li class="task-item">
+                    <img src="../img/demo-avatar.png" alt="Task Avatar" class="task-avatar">
+                    <span class="task-name">Play every day</span>
+                </li>
+                <li class="task-item">
+                    <img src="../img/demo-avatar.png" alt="Task Avatar" class="task-avatar">
+                    <span class="task-name">Create or Join a Squad</span>
+                </li>
+                <li class="task-item">
+                    <img src="../img/demo-avatar.png" alt="Task Avatar" class="task-avatar">
+                    <span class="task-name">Compete with other players</span>
+                </li>
+            </ul>
+
+            <div style="height:16px"></div>
+            <button class="withdraw-btn" id="withdrawNotAvailableBtn">Got it!</button>
+        </div>
+    </div>
+
 
     <header class="profile">
         <img src="../img/demo-avatar.png" alt="User Avatar" class="avatar">
