@@ -59,7 +59,6 @@ function countDownTimer(timerElement) {
 const tg = window.Telegram.WebApp;
 tg.ready();
 window.onload = function () {
-  const telegramWA = tg;
   console.log(`Telegram webAppVersion tg=${tg}`)
   if (tg) {
     console.log(`Telegram webAppVersion DOUBLE CHECK tg=${tg}`)

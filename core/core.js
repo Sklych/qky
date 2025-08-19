@@ -1,4 +1,4 @@
-const telegramWA =  window.Telegram && window.Telegram.WebApp;
+// const telegramWA =  window.Telegram && window.Telegram.WebApp;
 // console.log(`Telegram webAppVersion telegramWA=${telegramWA}`)
 // if (telegramWA) {
 //   telegramWA.ready();
