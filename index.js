@@ -8,13 +8,13 @@ function setupNavigationClickListeners() {
       if (id === 'navTyping') {
         // ignore
       } else if (id === 'navUpgrade') {
-        window.location.href = '/upgrade/upgrade.html';
+        window.location.href = 'upgrade/upgrade.html';
       } else if (id === 'navFriends') {
-        window.location.href = '/friends/friends.html';
+        window.location.href = 'friends/friends.html';
       } else if (id === 'navRewards') {
         window.location.href = '/rewards/rewards.html';
       } else if (id === 'navCashout') {
-        window.location.href = '/cashout/cashout.html';
+        window.location.href = 'cashout/cashout.html';
       }
     });
   });
