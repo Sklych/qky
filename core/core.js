@@ -131,7 +131,7 @@ function playHapticNavigation() {
 
 function playHapticSuccess() {
   if (versionAtLeast(appConfig.telegramWebApp.version, '6.1')) {
-    appConfig.telegramWebApp.HapticFeedback.impactOccurred('soft')
+    appConfig.telegramWebApp.HapticFeedback.notificationOccurred('success')
   }
 }
 
