@@ -1,13 +1,17 @@
 window.onload = function () {
-    if (window.appConfig.telegramWebApp) {
+    if (window.appConfig.telegramWebApp && window.versionAtLeast(window.appConfig.telegramWebApp.version, '6.1')) {
         window.appConfig.telegramWebApp.BackButton.show();
         window.appConfig.telegramWebApp.BackButton.onClick(() => {
-            if (navigator.vibrate) {
-                navigator.vibrate(50);
-            }
+            window.playHapticNavigation();
             window.appConfig.telegramWebApp.BackButton.hide();
             window.history.back();
         });
+    } else {
+        const backBtn = document.getElementById("backBtn");
+        backBtn.style.display = 'flex'
+        backBtn.addEventListener("click", () => {
+            window.history.back();
+        })
     }
 
     document.getElementById('delete-user-btn').addEventListener("click", () => {

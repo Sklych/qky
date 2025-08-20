@@ -150,7 +150,7 @@
 
 .join-squad-buttons {
   display: flex;
-  width: calc(100% - 24px);
+  width: calc(100% - 16px);
   margin-left: 8px;
   margin-right: 8px;
   gap: 8px;

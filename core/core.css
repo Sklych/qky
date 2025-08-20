@@ -188,4 +188,22 @@ body {
   color: black;
 }
 
+.back-button {
+  display: none;
+  top: 8px;
+  left: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary-light);
+  background: var(--primary);
+  cursor: pointer;
+}
 
+.back-button img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}

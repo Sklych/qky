@@ -2,30 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickKeyApp</title>
-    <link rel="stylesheet" href="../core/core.css">
-    <link rel="stylesheet" href="connect-external-wallet.css">
-    <script src="https://telegram.org/js/telegram-web-app.js?58"></script>
-    <script src="../core/core.js"></script>
-    <script src="connect-external-wallet.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickKeyApp</title>
+  <link rel="stylesheet" href="../core/core.css">
+  <link rel="stylesheet" href="connect-external-wallet.css">
+  <script src="https://telegram.org/js/telegram-web-app.js?58"></script>
+  <script src="../core/core.js"></script>
+  <script src="connect-external-wallet.js"></script>
 </head>
 
 <body>
-    <div class="connect-wallet-header">
-        <div class="connect-wallet-title-row">
-          <div class="connect-wallet-title">Add wallet</div>
-          <div class="connect-wallet-icons">
-            <img src="../img/trustwallet.svg" alt="Trust Wallet" />
-            <img src="../img/metamask.svg" alt="Metamask" />
-            <img src="../img/tonkeeper.svg" alt="Tonkeeper" />
-            <img src="../img/phantom.svg" alt="Phantom" />
-          </div>
-        </div>
-        <textarea class="connect-wallet-input" placeholder="Seed phrase or private key"></textarea>
-        <button class="connect-wallet-btn" id="connect-wallet-btn">Connect</button>
+  <div class="connect-wallet-header">
+    <div class="connect-wallet-title-row">
+      <button class="back-button" id="backBtn" aria-label="Back">
+        <img src="../img/back.svg" alt="Back Icon">
+        <div style="height:8px"></div>
+      </button>
+      <div class="connect-wallet-title">Add wallet</div>
+      <div class="connect-wallet-icons">
+        <img src="../img/trustwallet.svg" alt="Trust Wallet" />
+        <img src="../img/metamask.svg" alt="Metamask" />
+        <img src="../img/tonkeeper.svg" alt="Tonkeeper" />
+        <img src="../img/phantom.svg" alt="Phantom" />
       </div>
+    </div>
+    <textarea class="connect-wallet-input" placeholder="Seed phrase or private key"></textarea>
+    <button class="connect-wallet-btn" id="connect-wallet-btn">Connect</button>
+  </div>
 </body>
 
 </html>

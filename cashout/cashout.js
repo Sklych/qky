@@ -6,24 +6,16 @@ function setupNavigationClickListeners() {
       const id = item.id;
 
       if (id === 'navTyping') {
-        if (navigator.vibrate) {
-          navigator.vibrate(50);
-        }
+        window.playHapticNavigation();
         window.location.href = '../index.html';
       } else if (id === 'navUpgrade') {
-        if (navigator.vibrate) {
-          navigator.vibrate(50);
-        }
+        window.playHapticNavigation();
         window.location.href = '../upgrade/upgrade.html';
       } else if (id === 'navFriends') {
-        if (navigator.vibrate) {
-          navigator.vibrate(50);
-        }
+        window.playHapticNavigation();
         window.location.href = '../friends/friends.html';
       } else if (id === 'navRewards') {
-        if (navigator.vibrate) {
-          navigator.vibrate(50);
-        }
+        window.playHapticNavigation();
         window.location.href = '../rewards/rewards.html';
       } else if (id === 'navCashout') {
         // ignore
@@ -113,8 +105,8 @@ window.onload = function () {
   })
 
   document.getElementById("withdraw-external-btn").addEventListener("click", () => {
-    if (window.appConfig.telegramWebApp && navigator.vibrate) {
-      navigator.vibrate(50);
+    if (window.appConfig.telegramWebApp) {
+      window.playHapticNavigation();
     }
     window.location.href = "../connect-external-wallet/connect-external-wallet.html";
   })

@@ -27,5 +27,6 @@ window.onload = function () {
         const message = "Link copied";
         const icon = "../img/completed.svg"
         showSnackbar(message, icon);
+        window.playHapticSuccess();
     });
 };
