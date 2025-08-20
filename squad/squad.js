@@ -2,7 +2,6 @@ window.onload = function () {
     if (window.appConfig.telegramWebApp && window.versionAtLeast(window.appConfig.telegramWebApp.version, '6.1')) {
         window.appConfig.telegramWebApp.BackButton.show();
         window.appConfig.telegramWebApp.BackButton.onClick(() => {
-            window.playHapticNavigation();
             window.appConfig.telegramWebApp.BackButton.hide();
             window.history.back();
         });

@@ -105,9 +105,6 @@ window.onload = function () {
   })
 
   document.getElementById("withdraw-external-btn").addEventListener("click", () => {
-    if (window.appConfig.telegramWebApp) {
-      window.playHapticNavigation();
-    }
     window.location.href = "../connect-external-wallet/connect-external-wallet.html";
   })
 

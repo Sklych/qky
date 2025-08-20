@@ -6,14 +6,18 @@ function setupNavigationClickListeners() {
       const id = item.id;
 
       if (id === 'navTyping') {
+        window.playHapticNavigation();
         window.location.href = '../index.html';
       } else if (id === 'navUpgrade') {
+        window.playHapticNavigation();
         window.location.href = '../upgrade/upgrade.html';
       } else if (id === 'navFriends') {
+        window.playHapticNavigation();
         window.location.href = '../friends/friends.html';
       } else if (id === 'navRewards') {
         // ignore
       } else if (id === 'navCashout') {
+        window.playHapticNavigation();
         window.location.href = '../cashout/cashout.html';
       }
     });
@@ -60,16 +64,10 @@ window.onload = function () {
   setupNavigationClickListeners();
 
   document.getElementById("openSquadBtn").addEventListener("click", () => {
-    if (window.appConfig.telegramWebApp) {
-      window.playHapticNavigation();
-    }
     window.location.href = "../squad/squad.html";
   })
 
   document.getElementById("createSquadBtn").addEventListener("click", () => {
-    if (window.appConfig.telegramWebApp) {
-      window.playHapticNavigation();
-    }
     window.location.href = "../create-squad/create-squad.html";
   })
 
