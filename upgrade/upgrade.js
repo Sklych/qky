@@ -6,14 +6,18 @@ function setupNavigationClickListeners() {
       const id = item.id;
 
       if (id === 'navTyping') {
+        window.playHapticNavigation();
         window.location.href = '../index.html';
       } else if (id === 'navUpgrade') {
         // ignore
       } else if (id === 'navFriends') {
+        window.playHapticNavigation();
         window.location.href = '../friends/friends.html';
       } else if (id === 'navRewards') {
+        window.playHapticNavigation();
         window.location.href = '../rewards/rewards.html';
       } else if (id === 'navCashout') {
+        window.playHapticNavigation();
         window.location.href = '../cashout/cashout.html';
       }
     });
